@@ -5,6 +5,8 @@ class Pool {
 
     connect(options) {
         this._pool = new pg.Pool(options);
+        // Return statement for testing purposes
+        return this._pool.query('SELECT 1 + 1;');
     }
 }
 
