@@ -1,12 +1,16 @@
-const express = require('express');
-//const connectDB = require('');
-
-const app = express();
-
-//connectDB();
-
-app.get('/', (req, res) => res.send('API running...'));
+const app = require('./app');
+const pool = require('./pool');
 
 const PORT = 3001;
 
-app.listen(PORT, () => console.log('Server started on port: ${PORT}'));
+pool.connect({
+    host: '',
+    port: 5432,
+    database: '',
+    user: '',
+    password: '',
+});
+
+app().listen(PORT, () => {
+  console.log(`Listening on port: ${PORT}`);
+});
