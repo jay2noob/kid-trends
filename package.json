@@ -4,8 +4,8 @@
   "description": "",
   "main": "pool.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "migrate": "node-pg-migrate",
+    "start": "nodemon server.js"
   },
   "repository": {
     "type": "git",
