@@ -4,7 +4,6 @@
   "description": "",
   "main": "pool.js",
   "scripts": {
-    "migrate": "node-pg-migrate",
     "start": "nodemon server.js"
   },
   "repository": {
