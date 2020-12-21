@@ -2,10 +2,7 @@ const express = require('express');
 const router = express.Router();
 //const bcrypt = require('bcryptjs');
 //const jwt = require('jsonwebtoken');
-//const pool = require('../pool');
 
-router.get('/users', async (req, res) => {});
-router.get('/users/:id', async (req, res) => {});
 router.post('/users', async (req, res) => {
     // 1. Destructure req.body (username, email, password)
 
@@ -24,8 +21,6 @@ router.post('/users', async (req, res) => {
     // 5. Return JWT token
      
 });
-router.put('/users/:id', async (req, res) => {});
-router.delete('/users/:id', async (req, res) => {});
 
 module.exports = router;
 
