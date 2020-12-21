@@ -2,7 +2,7 @@
   "name": "kid-trends",
   "version": "1.0.0",
   "description": "",
-  "main": "pool.js",
+  "main": "server.js",
   "scripts": {
     "start": "nodemon server.js"
   },
