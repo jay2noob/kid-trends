@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import { ThemeContext } from '../contexts/ThemeContext'
-import Header from '../components/Header'
+import Navbar from '../components/Navbar/Navbar'
 import ThemeToggle from '../components/ThemeToggle'
 
 const Home = () => {
@@ -9,7 +9,7 @@ const Home = () => {
 
   return (
     <div stlye={{ background: theme.bgColor, color: theme.txtColor }}>
-      <Header />
+      <Navbar />
       <ThemeToggle />
       Hello from Home route
     </div>

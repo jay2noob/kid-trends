@@ -1,20 +1,20 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import ThemeContextProvider from './contexts/ThemeContext'
-import ProductsContextProvider from './contexts/ProductsContext'
+import ShopContextProvider from './contexts/ShopContext'
 import Home from './routes/Home'
-import Products from './routes/Products'
+import Shop from './routes/Shop'
 
 function App() {
   return (
     <ThemeContextProvider>
-      <ProductsContextProvider>
+      <ShopContextProvider>
         <Router>
           <Switch>
             <Route exact path="/" component={Home} />
-            <Route exact path="/products" component={Products} />
+            <Route exact path="/shop" component={Shop} />
           </Switch>
         </Router>
-      </ProductsContextProvider>
+      </ShopContextProvider>
     </ThemeContextProvider>
   );
 }
