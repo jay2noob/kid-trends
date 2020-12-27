@@ -6,7 +6,7 @@ export const ThemeContext = createContext()
 // create a context provder to wrap the entire application 
 const ThemeContextProvider = (props) => {
   const [theme , setTheme] = useState({
-    isLight: true,
+    isLightTheme: true,
     light: {
       txtColor: "#555",
       uiPrimary: "006E90",
@@ -21,18 +21,13 @@ const ThemeContextProvider = (props) => {
     } 
   })
 
-  // const toggleTheme = () => {
-  //   if(theme === 'light') {
-  //     setTheme('dark')
-  //   }
-  //   else {
-  //     setTheme('light')
-  //   }
-  // }
+  const toggleTheme = () => {
+    setTheme({...theme, isLightTheme: !theme.isLightTheme })
+  }
 
   // pass the previous state (theme) and new state (setTheme) to the context provider
   return (
-    <ThemeContext.Provider value={{ theme, setTheme }}>
+    <ThemeContext.Provider value={{ ...theme, toggleTheme }}>
       {props.children}
     </ThemeContext.Provider>
   )
