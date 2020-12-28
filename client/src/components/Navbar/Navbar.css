@@ -1,17 +1,38 @@
 .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1rem;
 }
 
 .navbar__brand-logo {
+  cursor: pointer;
 }
 
 .navbar__brand-name {
+  font-size: 1.25rem;
+}
+
+.navbar__link {
+  padding: 1rem 0.15rem;
+  text-decoration: none;
 }
 
 .navbar__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .navbar__list-item {
+  padding: 1rem 0.15rem;
+  display: inline-block;
+  font-size: 1.15rem;
 }
 
 .navbar__list-item--active {
+  color: red;
 }

@@ -3,6 +3,7 @@ import ThemeContextProvider from './contexts/ThemeContext'
 import ShopContextProvider from './contexts/ShopContext'
 import Home from './routes/Home'
 import Shop from './routes/Shop'
+import './styles.css'
 
 function App() {
   return (

@@ -8,16 +8,18 @@ const ThemeContextProvider = (props) => {
   const [theme , setTheme] = useState({
     isLightTheme: true,
     light: {
-      txtColor: "#555",
-      uiPrimary: "006E90",
-      uiSecondary: "F18F01",
-      bgColor: "#eee"
+      txtColor: "#373737",
+      uiPrimary: "#1e9494",
+      uiSecondary: "#da7f41",
+      uiError: "#c73237",
+      bgColor: "#e7e7e7"
     },
     dark: {
-      txtColor: "#ddd",
-      uiPrimary: "#008DB8",
-      uiSecondary: "#FEA520",
-      bgColor: "#555"
+      txtColor: "#dddddd",
+      uiPrimary: "#56B4B7",
+      uiSecondary: "#EA9A4A",
+      uiError: "#c73237",
+      bgColor: "#121212"
     } 
   })
 
