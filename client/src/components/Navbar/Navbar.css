@@ -14,6 +14,7 @@
 }
 
 .navbar__link {
+  margin-left: 1rem;
   padding: 1rem 0.15rem;
   text-decoration: none;
 }
@@ -34,5 +35,5 @@
 }
 
 .navbar__list-item--active {
-  color: red;
+  color: var(--primary-color);
 }

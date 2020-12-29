@@ -5,7 +5,6 @@ import { ThemeContext } from '../../contexts/ThemeContext'
 import Login from './Login'
 import ThemeToggle from './ThemeToggle'
 import ShopCart from './ShopCart'
-import Search from './Search'
 import './Navbar.css'
 
 const Navbar = () => {
@@ -19,16 +18,14 @@ const Navbar = () => {
             to='/' 
             className='navbar__link navbar__brand-name'
           >
-            Hello from the header component
+            ECOMMERCE
           </Link>
         </div>   
         <ul className="navbar__list">
-          <Search />
           <li className='navbar__list-item navbar__list-item--active'>
             <Link 
               to='/shop' 
               className='navbar__link'
-
             >
               Shop
             </Link> 

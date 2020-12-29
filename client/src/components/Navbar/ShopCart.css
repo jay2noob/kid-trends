@@ -1,6 +1,5 @@
 .navbar__shopping-cart {
   position: relative;
-  background-color: var(--primary-color);
 }
 
 .navbar__shopping-cart--counter {
