@@ -1,8 +1,8 @@
 :root {
   --dark-background: #363636;
   --dark-text: #363636;
-  --light-background: #f6f6f6;
-  --light-text: #f6f6f6;
+  --light-background: #f9f9f9;
+  --light-text: #f9f9f9;
   --primary-color: #b82b21;
   --secondary-color: #62aaa7;
   --secondary-background: #5a6a80;
@@ -18,6 +18,7 @@
 
 .dark a {
   color: var(--light-text);
+  text-decoration: none;
 }
 
 /**************************
@@ -30,6 +31,7 @@
 
 .light a {
   color: var(--dark-text);
+  text-decoration: none;
 }
 
 /**************************
@@ -41,6 +43,10 @@
   padding: 0;
 }
 
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
 button {
   margin: 0;
   border: none;
@@ -49,4 +55,19 @@ button {
   border-radius: 5px;
   text-decoration: none;
   display: inline-block;
+}
+
+img {
+  width: 100%;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  padding-right: 1rem;
+  padding-left: 1rem;
+  margin-right: auto;
+  margin-left: auto;
 }

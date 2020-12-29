@@ -5,6 +5,7 @@ import ShopContextProvider from './contexts/ShopContext'
 import Home from './routes/Home'
 import Shop from './routes/Shop'
 import Login from './routes/Login'
+import ProductPage from './routes/ProductPage'
 import './index.css'
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
             <Route exact path="/" component={Home} />
             <Route exact path="/shop" component={Shop} />
             <Route exact path="/login" component={Login} />
+            <Route exact path="/product/:id" component={ProductPage} />
           </Switch>
         </Router>
       </ShopContextProvider>

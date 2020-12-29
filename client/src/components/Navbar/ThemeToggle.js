@@ -12,7 +12,7 @@ const ThemeToggle = () => {
       <button
         onClick={toggleTheme}
         className='btn__theme-toggle'
-        style={{ background: theme.uiError, color: theme.txtColor }}
+        style={{ background: theme.bgColor, color: theme.txtColor }}
         >
           {theme === light ? <i className="fal fa-moon-stars"></i> : <i className="fal fa-sun"></i>}
       </button>

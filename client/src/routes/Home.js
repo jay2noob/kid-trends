@@ -2,18 +2,21 @@ import React, { useContext } from 'react'
 import { ThemeContext } from '../contexts/ThemeContext'
 import Navbar from '../components/Navbar/Navbar'
 import SearchBar from '../components/SearchBar/SearchBar'
+import Products from '../components/Product/Products'
 
 const Home = () => {
-  const { isLightTheme, light, dark } = useContext(ThemeContext) 
-  const theme = isLightTheme ? light : dark
+  const { isLightTheme } = useContext(ThemeContext) 
 
   return (
-    <div stlye={{ background: theme.bgColor, color: theme.txtColor }}>
+    <div className={isLightTheme ? 'light' : 'dark'}>
       <Navbar />
+      <main className='container'>
       <SearchBar />
-      Hello from Home route
-
+        <h1>Latest Products</h1>
+        <Products />
+      </main>
     </div>
+
   )
 }
 
