@@ -2,24 +2,20 @@ import React, { useContext } from 'react'
 import { Link } from "react-router-dom"
 
 import { ThemeContext } from '../../contexts/ThemeContext'
-import './AuthButton.css'
+import './Login.css'
 
-const AuthButton = () => {
+const Login = () => {
   const { isLightTheme, light, dark } = useContext(ThemeContext) 
   const theme = isLightTheme ? light : dark
 
   return (
     <>
-      <Link to='/signin' className='navbar__link'>
-        <button
-          className='btn__auth'
-          style={{ background: theme.uiPrimary, color: theme.txtColor }}
-        >
-          Sign in
-        </button>
+      <Link to='/login' className='navbar__link' style={{ background: theme.uiPrimary, color: theme.txtColor }}>
+        <i className="fal fa-user"></i>
+        <span className='btn__auth-text'>Sign in</span>
       </Link> 
     </>
   )
 }
 
-export default AuthButton
+export default Login

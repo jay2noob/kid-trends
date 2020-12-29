@@ -16,6 +16,7 @@ const ShopCart = () => {
         style={{ color: theme.txtColor }}
       >
         <i className="far fa-shopping-cart"></i>
+        <span className="navbar__shopping-cart--text">Cart</span>
         <span 
           className='navbar__shopping-cart--counter'
           style={{ background: theme.uiSecondary, color: theme.txtColor }}

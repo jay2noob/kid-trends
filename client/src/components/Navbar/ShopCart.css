@@ -1,13 +1,18 @@
 .navbar__shopping-cart {
   position: relative;
+  background-color: var(--primary-color);
 }
 
 .navbar__shopping-cart--counter {
   border-radius: 50%;
   position: absolute;
   top: -5%;
-  left: 50%;
+  left: 25%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
   padding: 0.2rem;
+}
+
+.navbar__shopping-cart--text {
+  margin-left: 0.15rem;
 }
