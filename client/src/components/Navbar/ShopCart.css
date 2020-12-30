@@ -11,6 +11,7 @@
   transform: translateX(-50%);
   padding: 0.2rem;
   font-size: 0.75rem;
+  background-color: var(--accent-color);
 }
 
 .navbar__shopping-cart--text {

@@ -19,10 +19,10 @@ const ProductPage = ({ match }) => {
           <img src={product.image} alt={product.name} />
         </div>
 
-        <div className="product__details-item-details">
-          <h2 className='product__details-name'>{product.name}</h2>
-          <h4 className='product__details-price'>Price: ${product.price}</h4>
-          <p className='product__details-desc'>Description: {product.description}</p>
+        <div className="product__details-item">
+          <h2 className='product__details-item--name'>{product.name}</h2>
+          <h4 className='product__details-item--price'>Price: ${product.price}</h4>
+          <p className='product__details-item--desc'>Description: {product.description}</p>
         </div>
 
         <div className="product__cart">

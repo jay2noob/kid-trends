@@ -19,7 +19,6 @@ const ShopCart = () => {
         <span className="navbar__shopping-cart--text">Cart</span>
         <span 
           className='navbar__shopping-cart--counter'
-          style={{ background: theme.uiSecondary, color: theme.txtColor }}
         >
           0
         </span>

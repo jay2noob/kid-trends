@@ -6,6 +6,8 @@
   --primary-color: #b82b21;
   --secondary-color: #62aaa7;
   --secondary-background: #5a6a80;
+  --error-color: #c73237;
+  --accent-color: #ea9a4a;
 }
 
 /**************************
@@ -135,22 +137,22 @@ a:hover {
   }
 }
 
-.product__details-name {
+.product__details-item--name {
   font-size: 2rem;
   font-weight: 500;
   margin-bottom: 2rem;
   padding-bottom: 2rem;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
 }
 
-.product__details-price {
+.product__details-item--price {
   font-weight: 500;
   margin-bottom: 2rem;
   padding-bottom: 2rem;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
 }
 
-.product__details-desc {
+.product__details-item--desc {
   font-weight: 400;
   line-height: 1.5;
 }
