@@ -13,7 +13,7 @@ const Product = ({ product }) => {
       <Link to={`/product/${product._id}`} className='product__name'>
         {product.name}
       </Link>
-      <Link className="product__category">
+      <Link to='#' className="product__category">
         {product.category}
       </Link>
       <span className='product__price'>${product.price}</span>
