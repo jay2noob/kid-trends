@@ -1,6 +1,6 @@
 .search__input {
   display: block;
-  width: 70%;
+  width: 67%;
   padding: 0.375rem 0.75rem;
   font-size: 1rem;
   font-weight: 400;
@@ -13,4 +13,10 @@
   appearance: none;
   border-radius: 0.25rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.search__btn {
+  margin-left: 0.15rem;
+  background-color: var(--primary-color);
+  color: var(--light-text);
 }

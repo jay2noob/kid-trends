@@ -12,6 +12,7 @@ const SearchInput = () => {
         className='search__input'
       >
       </input>
+      <button className='search__btn'>Search</button>
     </>
   )
 }

@@ -10,11 +10,13 @@ const Product = ({ product }) => {
         <img src={product.image} alt="a cool product"/>
       </Link>
 
-      <Link to={`/product/${product._id}`}>
-        <h2>{product.name}</h2>
+      <Link to={`/product/${product._id}`} className='product__name'>
+        {product.name}
       </Link>
-      <h4>{product.brand}</h4>
-      <h3>${product.price}</h3>
+      <Link className="product__category">
+        {product.category}
+      </Link>
+      <span className='product__price'>${product.price}</span>
     </div>
   )
 }

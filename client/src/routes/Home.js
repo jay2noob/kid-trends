@@ -12,7 +12,7 @@ const Home = () => {
       <Navbar />
       <main className='container'>
       <SearchBar />
-        <h1>Latest Products</h1>
+        <h1 className='mb-large text-center'>Latest Products</h1>
         <Products />
       </main>
     </div>
