@@ -3,7 +3,7 @@ import React from 'react'
 import SearchBar from '../components/SearchBar/SearchBar'
 import Products from '../components/Product/Products'
 
-const Home = () => {
+const HomePage = () => {
 
   return (
     <div>
@@ -17,4 +17,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default HomePage

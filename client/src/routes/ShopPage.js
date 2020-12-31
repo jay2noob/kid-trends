@@ -1,11 +1,11 @@
 import React from 'react'
 
-const Shop = () => {
+const ShopPage = () => {
   return (
     <div>
-      Hello from Shop route
+      Hello from ShopPage route
     </div>
   )
 }
 
-export default Shop
+export default ShopPage
