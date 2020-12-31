@@ -3,9 +3,10 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import ThemeContextProvider from './contexts/ThemeContext'
 import ShopContextProvider from './contexts/ShopContext'
 import Layout from './components/Layout'
-import Home from './routes/Home'
-import Shop from './routes/Shop'
-import Login from './routes/Login'
+import HomePage from './routes/HomePage'
+import ShopPage from './routes/ShopPage'
+import CartPage from './routes/CartPage'
+import LoginPage from './routes/LoginPage'
 import ProductPage from './routes/ProductPage'
 import NavBar from './components/Navbar/Navbar'
 import './index.css'
@@ -19,9 +20,10 @@ function App() {
           <NavBar />
           <Switch>
             <Layout>
-              <Route exact path="/" component={Home} />
-              <Route exact path="/shop" component={Shop} />
-              <Route exact path="/login" component={Login} />
+              <Route exact path="/" component={HomePage} />
+              <Route exact path="/shop" component={ShopPage} />
+              <Route exact path="/cart" component={CartPage} />
+              <Route exact path="/login" component={LoginPage} />
               <Route exact path="/product/:id" component={ProductPage} />
             </Layout>
           </Switch>

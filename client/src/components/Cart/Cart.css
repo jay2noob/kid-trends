@@ -1,0 +1,8 @@
+.cart {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+  grid-gap: 2rem;
+  padding: 1rem;
+  background-color: #dee2e6;
+}
