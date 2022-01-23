@@ -7,8 +7,8 @@ module.exports = () => {
   
   //middleware
   app.use(express.json());
-  app.use(usersRoutes);
-  app.use(authRoutes);
+  //app.use(usersRoutes);
+  //app.use(authRoutes);
 
   return app;
 };
